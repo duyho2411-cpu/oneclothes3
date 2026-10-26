@@ -1,0 +1,139 @@
+/* ONE CLOTHES - CUSTOM STYLES & LUXURY ROSE PALETTE */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+    background: #D98A9B;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #AF6274;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Subtle Floating Animations */
+@keyframes bounceSubtle {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+.animate-bounce-subtle {
+    animation: bounceSubtle 4s ease-in-out infinite;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.92);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-scale-up {
+    animation: scaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Active Style Tab Styling */
+.style-tab-btn.active {
+    background-color: #2D2926 !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 4px 14px rgba(175, 98, 116, 0.25);
+    border-color: #AF6274 !important;
+}
+
+/* Smooth Image hover effects */
+img {
+    transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Card hover transitions */
+.pricing-card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.pricing-card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 30px -10px rgba(175, 98, 116, 0.12);
+}
+
+/* Accordion transition */
+.faq-question i {
+    transition: transform 0.3s ease;
+}
+.faq-item.open .faq-question i {
+    transform: rotate(180deg);
+}
+.faq-item.open .faq-answer {
+    display: block !important;
+}
+
+/* Form input focus styles */
+input:focus, select:focus, textarea:focus {
+    box-shadow: 0 0 0 3px rgba(175, 98, 116, 0.25);
+    border-color: #AF6274 !important;
+}
+
+/* Selection Color matching Logo Blush Rose */
+::selection {
+    background-color: #F7D7D8;
+    color: #2D2926;
+}
+
+/* Product Carousel Styling */
+.product-slider-container {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 30px -10px rgba(175, 98, 116, 0.15);
+    border-color: #D98A9B !important;
+}
+
+/* Dragging cursor */
+.product-slider-container.is-dragging {
+    cursor: grabbing !important;
+    cursor: -webkit-grabbing !important;
+    user-select: none;
+    scroll-snap-type: none !important;
+}
+
+/* Dots indicator matching Logo Rose Wine */
+.slider-dot.active {
+    background-color: #AF6274 !important;
+    width: 28px !important;
+}
+
+/* Gradient mesh background helper */
+.bg-mesh-luxury {
+    background-color: #FAF7F2;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(247, 215, 216, 0.45) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(247, 215, 216, 0.35) 0px, transparent 50%),
+        radial-gradient(at 50% 50%, rgba(247, 247, 239, 0.6) 0px, transparent 50%);
+}

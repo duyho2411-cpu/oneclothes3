@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Clothes | Một Lựa Chọn - Chuẩn Mọi Phong Cách</title>
+    <meta name="description" content="Khám phá bộ sưu tập thời trang nữ công sở & dạo phố One Clothes. Form chuẩn người Á Đông, vải Eco-Tencel chống nhăn, tôn dáng và cân mọi bối cảnh từ 9AM đến 9PM.">
+    <link rel="icon" type="image/png" href="logo-clean.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            rose: '#AF6274',
+                            roseDark: '#8C3B4E',
+                            roseLight: '#F7D7D8',
+                            roseSoft: '#FDF2F4',
+                            roseBorder: '#F0CCD2',
+                            dark: '#2D2926',
+                            charcoal: '#443F3B',
+                            ivory: '#FAF7F2',
+                            ivoryLight: '#FCFCF7',
+                            cream: '#FFFDF9',
+                            sand: '#F4E9EB',
+                            sandLight: '#FAF7F2',
+                            gold: '#AF6274',
+                            goldLight: '#F7D7D8',
+                            goldDark: '#8C3B4E',
+                            accent: '#AF6274',
+                            accentHover: '#8C3B4E'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-b from-[#FAF7F2] via-[#FFFDF9] to-[#FDF2F4] text-brand-dark font-sans antialiased selection:bg-brand-roseLight selection:text-brand-dark min-h-screen">
+
+    <!-- TOP PROMOTION BANNER -->
+    <aside aria-label="Khuyến mãi" class="bg-gradient-to-r from-[#2D2926] via-[#8C3B4E] to-[#2D2926] text-white py-2 px-4 text-xs md:text-sm font-medium tracking-wide border-b border-brand-roseDark/30">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-2 mx-auto sm:mx-0">
+                <span class="inline-flex items-center justify-center bg-brand-roseLight text-brand-roseDark font-bold text-[10px] uppercase px-2 py-0.5 rounded-full animate-pulse shadow-xs">Flash Sale 2026</span>
+                <span>🔥 GIẢM TỚI <strong>41%</strong> + TẶNG ÁO LỤA CHO 50 KHÁCH HÀNG ĐẦU TIÊN!</span>
+            </div>
+            <div class="hidden sm:flex items-center gap-6 text-xs text-brand-roseLight">
+                <span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Đồng kiểm tại nhà</span>
+                <span class="flex items-center gap-1.5"><i data-lucide="truck" class="w-3.5 h-3.5"></i> Freeship từ 2 sản phẩm</span>
+                <span class="flex items-center gap-1.5"><i data-lucide="phone-call" class="w-3.5 h-3.5"></i> Hotline: 1900 8899</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- HEADER & NAVIGATION -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-brand-roseBorder/50 shadow-xs transition-all duration-300" id="mainHeader">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo with Real Logo Image -->
+            <a href="#" class="flex items-center gap-3 group">
+                <img src="logo-clean.png" alt="Logo One Clothes" class="h-12 sm:h-14 w-auto object-contain rounded-xl shadow-xs border border-brand-roseLight/80 group-hover:scale-105 group-hover:shadow-md transition-all duration-300">
+                <div class="flex flex-col">
+                    <span class="font-serif text-xl sm:text-2xl font-bold tracking-widest text-brand-dark group-hover:text-brand-rose transition-colors">
+                        ONE CLOTHES
+                    </span>
+                    <span class="text-[8px] sm:text-[9px] tracking-[0.25em] text-brand-rose uppercase -mt-0.5 font-bold">Capsule Wardrobe</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
+                <a href="#hero" class="hover:text-brand-rose transition-colors">Trang Chủ</a>
+                <a href="#benefits" class="hover:text-brand-rose transition-colors">Ưu Điểm Vượt Trội</a>
+                <a href="#interactive-style" class="hover:text-brand-rose transition-colors">Biến Hóa Phong Cách</a>
+                <a href="#reviews" class="hover:text-brand-rose transition-colors">Khách Hàng Nói Gì</a>
+                <a href="#pricing" class="hover:text-brand-rose transition-colors">Bảng Giá Ưu Đãi</a>
+                <a href="#faq" class="hover:text-brand-rose transition-colors">Câu Hỏi Thường Gặp</a>
+            </nav>
+
+            <!-- CTA Header Button -->
+            <div class="flex items-center gap-3">
+                <a href="#pricing" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-rose text-white hover:bg-brand-roseDark transition-all duration-300 shadow-sm hover:shadow-md">
+                    <span>Nhận Ưu Đãi 41%</span>
+                    <i data-lucide="arrow-right" class="w-3.5 h-3.5 ml-1.5"></i>
+                </a>
+                <!-- Mobile menu button -->
+                <button id="mobileMenuBtn" aria-label="Mở menu điều hướng" class="md:hidden p-2 text-gray-700 hover:text-brand-dark focus:outline-none">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-brand-roseBorder/60 px-6 py-4 space-y-3 text-sm font-medium text-gray-800">
+            <a href="#hero" class="block py-1 hover:text-brand-rose">Trang Chủ</a>
+            <a href="#benefits" class="block py-1 hover:text-brand-rose">Ưu Điểm Vượt Trội</a>
+            <a href="#interactive-style" class="block py-1 hover:text-brand-rose">Biến Hóa Phong Cách</a>
+            <a href="#reviews" class="block py-1 hover:text-brand-rose">Khách Hàng Nói Gì</a>
+            <a href="#pricing" class="block py-1 hover:text-brand-rose">Bảng Giá Ưu Đãi</a>
+            <a href="#faq" class="block py-1 hover:text-brand-rose">Câu Hỏi Thường Gặp</a>
+            <a href="#pricing" class="block text-center py-2.5 mt-2 bg-brand-rose text-white font-bold rounded-lg text-xs uppercase shadow-sm">
+                Nhận Ưu Đãi 41% Hôm Nay
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========================================== -->
+        <!-- KHỐI 1: HERO SECTION (ATTENTION - 3 GIÂY ĐẦU) -->
+        <!-- ========================================== -->
+        <section id="hero" class="relative overflow-hidden pt-8 pb-16 lg:pt-16 lg:pb-24 bg-gradient-to-b from-[#FAF7F2] via-[#FFF9FA] to-[#FDF2F4]">
+            <!-- Decorative blur balls matching logo rose and ivory -->
+            <div class="absolute top-1/4 -left-32 w-96 h-96 bg-brand-roseLight/35 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute bottom-10 -right-32 w-96 h-96 bg-brand-roseLight/30 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                    
+                    <!-- Left Column: Copywriting & CTA -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <!-- Badge Tagline -->
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 border border-brand-rose/40 text-brand-dark text-xs font-semibold shadow-xs">
+                            <span class="w-2 h-2 rounded-full bg-brand-rose animate-ping"></span>
+                            <span class="tracking-widest uppercase text-[11px] text-brand-rose font-bold">✦ NEW CAPSULE COLLECTION 2026</span>
+                        </div>
+
+                        <!-- Main Headline -->
+                        <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-brand-dark leading-[1.15]">
+                            Nâng Tầm Thần Thái – <br class="hidden sm:block">
+                            <span class="italic font-normal text-brand-rose">Nơi Nét Riêng</span> Lên Tiếng.
+                        </h1>
+
+                        <!-- Sub-headline -->
+                        <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                            Một lựa chọn chuẩn form cho nàng bận rộn – Tự tin cân trọn mọi bối cảnh từ <strong class="text-brand-dark font-semibold">9h sáng nơi công sở</strong> đến <strong class="text-brand-dark font-semibold">9h tối tiệc hẹn lãng mạn</strong> mà không tốn quá 5 phút chuẩn bị.
+                        </p>
+
+                        <!-- Key Value Bullet Points -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-left">
+                            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-white/80 border border-brand-sand">
+                                <div class="w-8 h-8 rounded-lg bg-brand-gold/15 flex items-center justify-center text-brand-goldDark flex-shrink-0">
+                                    <i data-lucide="sparkles" class="w-4 h-4"></i>
+                                </div>
+                                <span class="text-xs font-semibold text-gray-800">Cập nhật thiết kế mới liên tục</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-white/80 border border-brand-sand">
+                                <div class="w-8 h-8 rounded-lg bg-brand-gold/15 flex items-center justify-center text-brand-goldDark flex-shrink-0">
+                                    <i data-lucide="shield-check" class="w-4 h-4"></i>
+                                </div>
+                                <span class="text-xs font-semibold text-gray-800">Hàng tuyển chọn & tự sản xuất với chất lượng cao</span>
+                            </div>
+                            <div class="flex items-center gap-2.5 p-3 rounded-xl bg-white/80 border border-brand-sand">
+                                <div class="w-8 h-8 rounded-lg bg-brand-gold/15 flex items-center justify-center text-brand-goldDark flex-shrink-0">
+                                    <i data-lucide="user-check" class="w-4 h-4"></i>
+                                </div>
+                                <span class="text-xs font-semibold text-gray-800">Hỗ trợ tư vấn size chuẩn xác</span>
+                            </div>
+                        </div>
+
+                        <!-- CTA Action Area -->
+                        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                            <a href="#pricing" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full text-sm font-bold uppercase tracking-wider bg-brand-accent hover:bg-brand-accentHover text-white shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300">
+                                <i data-lucide="shopping-bag" class="w-4 h-4 mr-2"></i>
+                                <span>Mua Ngay – Giảm 41% Hôm Nay</span>
+                            </a>
+                            <a href="#interactive-style" class="w-full sm:w-auto inline-flex items-center justify-center px-6 py-4 rounded-full text-sm font-semibold text-gray-700 bg-white hover:bg-brand-sand border border-gray-200 transition-colors">
+                                <i data-lucide="play-circle" class="w-4 h-4 mr-2 text-brand-goldDark"></i>
+                                <span>Xem 3 Cách Phối Đồ</span>
+                            </a>
+                        </div>
+
+                        <!-- Micro-Trust Guarantee Badges -->
+                        <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-y-2 gap-x-6 text-xs text-gray-500 font-medium">
+                            <span class="inline-flex items-center gap-1.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i> Miễn phí giao hàng toàn quốc
+                            </span>
+                            <span class="inline-flex items-center gap-1.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i> Mở hộp thử đồ trước khi thanh toán
+                            </span>
+                            <span class="inline-flex items-center gap-1.5">
+                                <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-600"></i> Đổi size 7 ngày miễn phí
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Visual Imagery & Floating Proof Cards -->
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative mx-auto max-w-md lg:max-w-none">
+                            <!-- Main Hero Image Frame -->
+                            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-gray-100 aspect-[4/5]">
+                                <img 
+                                    src="one clothes 1/ONE_CLOTHES_19_POSE_1.png" 
+                                    alt="Người mẫu One Clothes 1 trong trang phục thanh lịch hiện đại" 
+                                    class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+                                    loading="eager"
+                                >
+                                <!-- Gradient bottom overlay -->
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                                <div class="absolute bottom-5 left-5 right-5 text-white">
+                                    <span class="text-xs uppercase tracking-widest text-brand-goldLight font-semibold">Signature Capsule 2026</span>
+                                    <p class="font-serif text-lg font-medium italic">"Vẻ đẹp thanh lịch đến từ sự tối giản có chủ đích."</p>
+                                </div>
+                            </div>
+
+                            <!-- Floating Badge 1: 9AM vs 9PM Tag -->
+                            <div class="absolute -top-4 -right-4 sm:-right-6 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-xl border border-brand-sand flex items-center gap-3 animate-bounce-subtle">
+                                <div class="w-10 h-10 rounded-xl bg-amber-50 flex items-center justify-center text-amber-600">
+                                    <i data-lucide="sun-medium" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[11px] uppercase font-bold text-gray-400">Desk-to-Dinner</p>
+                                    <p class="text-xs font-bold text-brand-dark">Từ 9h Sáng Đến 9h Tối</p>
+                                </div>
+                            </div>
+
+                            <!-- Floating Badge 2: Real Customer Rating Card -->
+                            <div class="absolute -bottom-6 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-xl border border-brand-sand max-w-[220px]">
+                                <div class="flex items-center gap-1 text-amber-400 mb-1">
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <span class="text-xs font-bold text-gray-800 ml-1">4.9/5.0</span>
+                                </div>
+                                <p class="text-[11px] text-gray-600 leading-tight">
+                                    "Vải mát lịm, ngồi máy tính cả ngày không hề nhăn nếp!"
+                                </p>
+                                <span class="text-[10px] text-brand-goldDark font-semibold mt-1 block">Chị Minh Anh • Q.1, TP.HCM</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- KHỐI 2: SOCIAL PROOF (TRUST - XÂY DỰNG NIỀM TIN) -->
+        <!-- ========================================== -->
+        <section id="reviews" class="py-16 bg-white border-y border-brand-sand">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Numbers Section -->
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="text-xs uppercase font-bold tracking-widest text-brand-goldDark">Niềm Tin Từ Hơn 50.000+ Phụ Nữ</span>
+                    <h2 class="font-serif text-2xl sm:text-4xl font-bold text-brand-dark mt-2">
+                        Được Phái Đẹp Công Sở Khắp Cả Nước Yêu Thích
+                    </h2>
+                    <p class="text-sm text-gray-600 mt-2">
+                        Không phải lời nói một chiều từ nhãn hàng, đây là kết quả từ hàng vạn quý cô đã thay đổi diện mạo cùng One Clothes.
+                    </p>
+                </div>
+
+                <!-- 4 Metrics Counters -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center mb-16">
+                    <div class="p-6 rounded-2xl bg-brand-sandLight/60 border border-brand-sand">
+                        <p class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark" data-counter="4.9">4.9 <span class="text-brand-gold">★</span></p>
+                        <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mt-1">Đánh giá trung bình</p>
+                        <span class="text-[11px] text-gray-400">Từ 12.800+ nhận xét thực tế</span>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-brand-sandLight/60 border border-brand-sand">
+                        <p class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark" data-counter="85000">85.000+</p>
+                        <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mt-1">Thiết kế trao tay</p>
+                        <span class="text-[11px] text-gray-400">Đến khách hàng 63 tỉnh thành</span>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-brand-sandLight/60 border border-brand-sand">
+                        <p class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark" data-counter="92.4">92.4%</p>
+                        <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mt-1">Khách quay lại</p>
+                        <span class="text-[11px] text-gray-400">Mua tiếp sản phẩm thứ 2</span>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-brand-sandLight/60 border border-brand-sand">
+                        <p class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark">15 Phút</p>
+                        <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mt-1">Tiết kiệm mỗi sáng</p>
+                        <span class="text-[11px] text-gray-400">Không còn đau đầu phối đồ</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Card 1 -->
+                    <div class="bg-brand-sandLight rounded-3xl p-6 sm:p-8 border border-brand-sand relative flex flex-col justify-between hover:shadow-lg transition-shadow">
+                        <div>
+                            <div class="flex items-center gap-1 text-amber-400 mb-4">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <span class="ml-2 text-xs font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full flex items-center gap-1">
+                                    <i data-lucide="badge-check" class="w-3 h-3"></i> Đã mua hàng
+                                </span>
+                            </div>
+                            <blockquote class="text-sm text-gray-700 leading-relaxed italic mb-6">
+                                "Đi làm mặc thanh lịch, tan làm khoác thêm chiếc blazer One Clothes là sang xịn đi uống cafe luôn. Vải siêu mát, quay giặt máy thoải mái không lo dão form hay nhăn nhúm."
+                            </blockquote>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-gray-200">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&q=80" alt="Minh Anh" class="w-11 h-11 rounded-full object-cover">
+                            <div>
+                                <h4 class="text-xs font-bold text-brand-dark">Minh Anh (28 tuổi)</h4>
+                                <p class="text-[11px] text-gray-500">Marketing Manager • Hà Nội</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="bg-brand-sandLight rounded-3xl p-6 sm:p-8 border border-brand-sand relative flex flex-col justify-between hover:shadow-lg transition-shadow">
+                        <div>
+                            <div class="flex items-center gap-1 text-amber-400 mb-4">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <span class="ml-2 text-xs font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full flex items-center gap-1">
+                                    <i data-lucide="badge-check" class="w-3 h-3"></i> Đã mua hàng
+                                </span>
+                            </div>
+                            <blockquote class="text-sm text-gray-700 leading-relaxed italic mb-6">
+                                "Tối giản nhưng tôn dáng cực kỳ. Che bụng dưới rất khéo léo cho người ngồi văn phòng nhiều như mình. Cả phòng công ty ai cũng hỏi mình mua ở đâu."
+                            </blockquote>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-gray-200">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=120&q=80" alt="Thu Trang" class="w-11 h-11 rounded-full object-cover">
+                            <div>
+                                <h4 class="text-xs font-bold text-brand-dark">Thu Trang (25 tuổi)</h4>
+                                <p class="text-[11px] text-gray-500">UI/UX Designer • TP.HCM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Stylist Quote -->
+                    <div class="bg-brand-dark text-white rounded-3xl p-6 sm:p-8 relative flex flex-col justify-between hover:shadow-xl transition-shadow">
+                        <div>
+                            <div class="flex items-center gap-1 text-brand-gold mb-4">
+                                <i data-lucide="award" class="w-5 h-5"></i>
+                                <span class="text-xs uppercase font-bold tracking-wider text-brand-goldLight ml-1">Đánh giá từ Stylist</span>
+                            </div>
+                            <blockquote class="text-sm text-gray-200 leading-relaxed italic mb-6">
+                                "One Clothes giải quyết hoàn hảo bài toán giữa sự thoải mái và vẻ sang trọng. Cắt giảm chi tiết thừa để tôn lên cốt cách phụ nữ hiện đại chính là đỉnh cao của phong cách Quiet Luxury."
+                            </blockquote>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-white/15">
+                            <div class="w-11 h-11 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-goldLight font-serif font-bold text-lg">
+                                TH
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold text-white">Thanh Hằng</h4>
+                                <p class="text-[11px] text-gray-400">Senior Fashion Stylist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- KHỐI 3: FEATURES & BENEFITS (LỢI ÍCH CỐT LÕI) -->
+        <!-- ========================================== -->
+        <section id="benefits" class="py-20 bg-gradient-to-b from-[#FAF7F2] via-[#FDF2F4]/50 to-[#FAF7F2] border-b border-brand-roseBorder/40">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-xs uppercase font-bold tracking-widest text-brand-goldDark">Công Nghệ & Rập May Độc Quyền</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark mt-2">
+                        Tại Sao One Clothes Là Món Đồ Không Thể Thiếu Trong Tủ?
+                    </h2>
+                    <p class="text-sm sm:text-base text-gray-600 mt-3">
+                        Mỗi thiết kế đều được tính toán tỉ mỉ đến từng mi-li-mét rập may để mang lại sự tự tin trọn vẹn nhất cho bạn.
+                    </p>
+                </div>
+
+                <!-- 3 Pillars (Z-Pattern Layout) -->
+                <div class="space-y-16 lg:space-y-24">
+                    
+                    <!-- Pillar 1: Chất vải -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                        <div class="lg:col-span-6 order-2 lg:order-1 space-y-4">
+                            <span class="inline-block px-3 py-1 rounded-full bg-brand-gold/15 text-brand-goldDark text-xs font-bold uppercase tracking-wider">
+                                Trụ cột 01 • Vải cao cấp
+                            </span>
+                            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-brand-dark">
+                                Vải Eco-Tencel & Silk Blend: Thoáng Mát – Không Nhăn Nhúm
+                            </h3>
+                            <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                                Được dệt từ sợi sinh học tự nhiên kết hợp tơ tằm mềm mại, bề mặt vải có độ rủ sang trọng tự nhiên và công nghệ giữ nếp nén nhiệt tiên tiến.
+                            </p>
+                            
+                            <!-- Benefits Checklist -->
+                            <div class="space-y-2.5 pt-2">
+                                <div class="flex items-start gap-3">
+                                    <div class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700"><strong>Thoáng mát suốt 8 tiếng:</strong> Thấm hút mồ hôi gấp 2 lần cotton thông thường.</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700"><strong>Tự hồi nếp gấp:</strong> Ngồi họp, gấp gọn trong túi xách hay vali vẫn phẳng phiu.</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700"><strong>Giặt máy dễ dàng:</strong> Bền màu, không xơ xù lông sau hàng chục lần giặt.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-6 order-1 lg:order-2">
+                            <div class="relative rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[3/4] sm:aspect-[4/5] bg-gray-100">
+                                <img src="one clothes 16/ONE_CLOTHES_18_POSE_1.png" alt="Thiết kế One Clothes 16" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
+                                <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-md px-3.5 py-2 rounded-xl text-xs font-semibold text-brand-dark flex items-center gap-2 shadow-sm">
+                                    <i data-lucide="sparkles" class="w-4 h-4 text-brand-goldDark"></i> One Clothes 16: Chất vải dệt kim thoáng mát cao cấp
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 2: Rập 3D Cut -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                        <div class="lg:col-span-6">
+                            <div class="relative rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[3/4] sm:aspect-[4/5] bg-gray-100">
+                                <img src="one clothes 15/ONE_CLOTHES_17_POSE_1.png" alt="Thiết kế One Clothes 15" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
+                                <div class="absolute bottom-4 left-4 bg-brand-dark/90 text-white backdrop-blur-md px-3.5 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 shadow-sm">
+                                    <i data-lucide="maximize" class="w-4 h-4 text-brand-gold"></i> One Clothes 15: Rập Ergonomic 3D tôn dáng hack chân +5cm
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-6 space-y-4">
+                            <span class="inline-block px-3 py-1 rounded-full bg-brand-gold/15 text-brand-goldDark text-xs font-bold uppercase tracking-wider">
+                                Trụ cột 02 • Form Dáng Tôn Nét Đẹp
+                            </span>
+                            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-brand-dark">
+                                Rập "Ergonomic 3D": Giấu Khuyết Điểm, Kéo Dài Chân
+                            </h3>
+                            <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                                Đúc kết từ số liệu nhân trắc học của hơn 10.000 phụ nữ Á Đông, chúng tôi tạo nên kỹ thuật cắt vát eo và nếp gấp giấu chỉ đặc thù.
+                            </p>
+                            
+                            <div class="space-y-2.5 pt-2">
+                                <div class="flex items-start gap-3">
+                                    <div class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700"><strong>Giấu khéo vòng bụng dưới:</strong> Đường xéo tự nhiên che hoàn toàn ngấn mỡ sau giờ làm việc.</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700"><strong>Hiệu ứng chân dài +5cm:</strong> Cạp eo nâng cao tạo tỉ lệ cơ thể hoàng kim 3:7.</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700"><strong>Không gò bó:</strong> Cử động đứng lên ngồi xuống thoải mái, không cộm ngứa.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 3: 3-in-1 Desk-to-Dinner -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                        <div class="lg:col-span-6 order-2 lg:order-1 space-y-4">
+                            <span class="inline-block px-3 py-1 rounded-full bg-brand-gold/15 text-brand-goldDark text-xs font-bold uppercase tracking-wider">
+                                Trụ cột 03 • Ứng Dụng Đỉnh Cao
+                            </span>
+                            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-brand-dark">
+                                Triết Lý 3-in-1: 1 Món Đồ – Cân Trọn 5 Outfit Cả Tuần
+                            </h3>
+                            <p class="text-sm sm:text-base text-gray-600 leading-relaxed">
+                                Bạn không cần một tủ đồ chật cứng để mặc đẹp. Với One Clothes, bạn có thể dễ dàng phối cùng blazer đi họp, phối cùng cardigan đi dạo phố, hay mang cùng giày cao gót đến buổi tiệc sang trọng.
+                            </p>
+                            
+                            <div class="space-y-2.5 pt-2">
+                                <div class="flex items-start gap-3">
+                                    <div class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700"><strong>Tiết kiệm hàng triệu đồng:</strong> Mua 1 được 3 công năng sử dụng.</span>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                        <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                                    </div>
+                                    <span class="text-sm text-gray-700"><strong>Bảng màu Quiet Luxury:</strong> Tone màu kem cát, đen huyền bí, nâu caramel không bao giờ lỗi mốt.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-6 order-1 lg:order-2">
+                            <div class="relative rounded-3xl overflow-hidden shadow-xl border-4 border-white aspect-[3/4] sm:aspect-[4/5] bg-gray-100">
+                                <img src="one clothes 14/ONE_CLOTHES_16_POSE_1.png" alt="Thiết kế One Clothes 14" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
+                                <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-md px-3.5 py-2 rounded-xl text-xs font-semibold text-brand-dark flex items-center gap-2 shadow-sm">
+                                    <i data-lucide="layers" class="w-4 h-4 text-brand-goldDark"></i> One Clothes 14: Mix & Match tối giản nhưng luôn cuốn hút
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- INTERACTIVE WIDGET: OUTFIT SWITCHER & SIZE FINDER -->
+        <!-- ========================================== -->
+        <section id="interactive-style" class="py-20 bg-white border-t border-brand-sand">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="text-xs uppercase font-bold tracking-widest text-brand-goldDark">Trải Nghiệm Trực Quan</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark mt-2">
+                        Một Bộ Trang Phục – Biến Hóa 3 Bối Cảnh
+                    </h2>
+                    <p class="text-sm text-gray-600 mt-2">
+                        Bấm chọn các mốc thời gian để xem chiếc đầm One Clothes đồng hành cùng bạn suốt cả ngày dài.
+                    </p>
+                </div>
+
+                <!-- Tab Buttons -->
+                <div class="flex justify-center mb-8">
+                    <div class="inline-flex p-1.5 rounded-2xl bg-brand-sandLight border border-brand-sand gap-1 sm:gap-2">
+                        <button class="style-tab-btn active px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center gap-2" data-tab="office">
+                            <i data-lucide="briefcase" class="w-4 h-4"></i>
+                            <span>09:00 AM • Công Sở</span>
+                        </button>
+                        <button class="style-tab-btn px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 text-gray-600 hover:text-brand-dark" data-tab="cafe">
+                            <i data-lucide="coffee" class="w-4 h-4"></i>
+                            <span>05:30 PM • Cà Phê & Dạo Phố</span>
+                        </button>
+                        <button class="style-tab-btn px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 text-gray-600 hover:text-brand-dark" data-tab="party">
+                            <i data-lucide="glass-water" class="w-4 h-4"></i>
+                            <span>08:30 PM • Tiệc Tối Sang Trọng</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tab Contents -->
+                <div class="max-w-4xl mx-auto bg-brand-sandLight rounded-3xl p-6 sm:p-10 border border-brand-sand">
+                    
+                    <!-- Content 1: Office -->
+                    <div id="tab-office" class="style-content grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-gray-200 shadow-md">
+                            <img src="one clothes 1/ONE_CLOTHES_19_POSE_1.png" alt="Phong cách công sở One Clothes 1" class="w-full h-full object-cover">
+                        </div>
+                        <div class="space-y-4">
+                            <div class="inline-block px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold uppercase">
+                                09:00 AM • Chuyên Nghiệp & Quyền Lực
+                            </div>
+                            <h3 class="font-serif text-2xl font-bold text-brand-dark">Tự Tin Thuyết Trình Trước Đối Tác</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Kết hợp với chiếc áo blazer mỏng nhẹ và giày cao gót kitten heel. Thiết kế cổ chữ V thanh thoát giúp gương mặt rạng rỡ, toát lên phong thái người phụ nữ thành đạt và làm chủ công việc.
+                            </p>
+                            <ul class="text-xs text-gray-700 space-y-2 pt-2">
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Không nhăn khi ngồi máy tính liên tục</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Lịch thiệp, đúng chuẩn văn phòng hiện đại</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Content 2: Cafe -->
+                    <div id="tab-cafe" class="style-content hidden grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-gray-200 shadow-md">
+                            <img src="one clothes 2/ONE_CLOTHES_20_POSE_1.png" alt="Phong cách cafe dạo phố One Clothes 2" class="w-full h-full object-cover">
+                        </div>
+                        <div class="space-y-4">
+                            <div class="inline-block px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold uppercase">
+                                05:30 PM • Thoải Mái & Năng Động
+                            </div>
+                            <h3 class="font-serif text-2xl font-bold text-brand-dark">Gặp Gỡ Bạn Bè Sau Giờ Làm</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Chỉ cần tháo bớt blazer, xắn nhẹ tay áo và đổi sang đôi giày bệt búp bê hoặc sandal quai mảnh. Bạn đã sẵn sàng cho buổi trò chuyện rôm rả tại quán cà phê quen thuộc với vẻ đẹp phóng khoáng, tự nhiên.
+                            </p>
+                            <ul class="text-xs text-gray-700 space-y-2 pt-2">
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Vải mềm nhẹ, thông thoáng làn da</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Dễ dàng chụp những bức ảnh "sống ảo" ngút ngàn</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Content 3: Party -->
+                    <div id="tab-party" class="style-content hidden grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div class="rounded-2xl overflow-hidden aspect-[4/5] bg-gray-200 shadow-md">
+                            <img src="one clothes 4/ONE_CLOTHES_05_POSE_1.png" alt="Phong cách tiệc tối One Clothes 4" class="w-full h-full object-cover">
+                        </div>
+                        <div class="space-y-4">
+                            <div class="inline-block px-3 py-1 rounded-full bg-purple-100 text-purple-800 text-xs font-bold uppercase">
+                                08:30 PM • Quyến Rũ & Tỏa Sáng
+                            </div>
+                            <h3 class="font-serif text-2xl font-bold text-brand-dark">Bữa Tối Lãng Mạn Dưới Ánh Đèn</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">
+                                Thêm một chiếc vòng cổ ánh kim, đôi hoa tai ngọc trai và son môi đỏ đậm. Độ rủ óng ả của chất vải Silk-Cotton phản chiếu lung linh dưới ánh đèn vàng, biến bạn thành tâm điểm thu hút mọi ánh nhìn.
+                            </p>
+                            <ul class="text-xs text-gray-700 space-y-2 pt-2">
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Tôn trọn đường cong cơ thể tinh tế</li>
+                                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Không lo lộ bụng dù sau bữa tối no say</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- SMART SIZE FINDER CALCULATOR -->
+                <div class="mt-16 max-w-3xl mx-auto bg-gradient-to-br from-brand-sandLight via-white to-brand-sandLight p-6 sm:p-8 rounded-3xl border-2 border-brand-gold/30 shadow-md">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-brand-gold/20 text-brand-goldDark flex items-center justify-center">
+                            <i data-lucide="sparkles" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-serif text-xl font-bold text-brand-dark">Công Cụ Gợi Ý Size Chuẩn Xác (AI Size Finder)</h3>
+                            <p class="text-xs text-gray-500">Nhập số đo để hệ thống tự động tính toán kích cỡ vừa vặn nhất cho bạn</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-700 mb-1">Chiều cao của bạn (cm):</label>
+                            <input type="number" id="calcHeight" placeholder="Ví dụ: 160" value="160" class="w-full px-4 py-2.5 rounded-xl border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-700 mb-1">Cân nặng của bạn (kg):</label>
+                            <input type="number" id="calcWeight" placeholder="Ví dụ: 50" value="50" class="w-full px-4 py-2.5 rounded-xl border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-amber-50/80 border border-amber-200/80 flex flex-col sm:flex-row items-center justify-between gap-3">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600 flex-shrink-0"></i>
+                            <div>
+                                <p class="text-xs text-gray-600">Kích cỡ đề xuất cho bạn:</p>
+                                <p class="text-lg font-bold text-brand-dark" id="calcResult">Size M (Vừa vặn, thoải mái cử động)</p>
+                            </div>
+                        </div>
+                        <a href="#orderForm" class="text-xs font-bold text-brand-goldDark hover:underline flex items-center gap-1">
+                            Áp dụng vào đơn hàng <i data-lucide="arrow-down" class="w-3.5 h-3.5"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- KHỐI 4: OFFER & PRICE (ACTION - CHỐT ĐƠN) -->
+        <!-- ========================================== -->
+        <section id="pricing" class="py-20 bg-gradient-to-b from-[#FAF7F2] via-[#FDF0F2] to-[#FAF7F2] relative overflow-hidden border-b border-brand-roseBorder/40">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Countdown & Scarcity Header -->
+                <div class="max-w-3xl mx-auto text-center mb-10">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-100 text-red-700 text-xs font-bold uppercase tracking-wider mb-3">
+                        <i data-lucide="flame" class="w-3.5 h-3.5 fill-current"></i> Flash Sale Lớn Nhất Năm 2026
+                    </span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-brand-dark">
+                        Bảng Giá Ưu Đãi 5 Thiết Kế Biểu Tượng
+                    </h2>
+                    <p class="text-sm text-gray-600 mt-2">
+                        Chỉ áp dụng cho <strong class="text-brand-accent">50 khách hàng đầu tiên</strong> đặt mua tại trang này.
+                    </p>
+
+                    <!-- Realtime Countdown Timer -->
+                    <div class="mt-6 inline-flex items-center gap-2 sm:gap-4 p-4 rounded-2xl bg-white border border-brand-sand shadow-sm">
+                        <span class="text-xs font-bold uppercase text-gray-500 flex items-center gap-1 mr-1">
+                            <i data-lucide="clock" class="w-4 h-4 text-red-500"></i> Kết thúc sau:
+                        </span>
+                        <div class="flex items-center gap-2">
+                            <div class="flex flex-col items-center">
+                                <span id="timerHours" class="font-serif text-xl sm:text-2xl font-bold text-brand-dark bg-gray-100 px-2.5 py-1 rounded-lg">04</span>
+                                <span class="text-[9px] text-gray-400 uppercase mt-0.5">Giờ</span>
+                            </div>
+                            <span class="font-bold text-gray-400">:</span>
+                            <div class="flex flex-col items-center">
+                                <span id="timerMinutes" class="font-serif text-xl sm:text-2xl font-bold text-brand-dark bg-gray-100 px-2.5 py-1 rounded-lg">38</span>
+                                <span class="text-[9px] text-gray-400 uppercase mt-0.5">Phút</span>
+                            </div>
+                            <span class="font-bold text-gray-400">:</span>
+                            <div class="flex flex-col items-center">
+                                <span id="timerSeconds" class="font-serif text-xl sm:text-2xl font-bold text-red-600 bg-red-50 px-2.5 py-1 rounded-lg">45</span>
+                                <span class="text-[9px] text-gray-400 uppercase mt-0.5">Giây</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Progress bar -->
+                    <div class="max-w-md mx-auto mt-4">
+                        <div class="flex justify-between text-xs font-semibold text-gray-600 mb-1">
+                            <span>Đã đăng ký: <strong>42 / 50 suất</strong></span>
+                            <span class="text-red-600">Chỉ còn 8 suất cuối!</span>
+                        </div>
+                        <div class="w-full bg-gray-200 h-2.5 rounded-full overflow-hidden">
+                            <div class="bg-gradient-to-r from-brand-gold to-brand-accent h-full rounded-full transition-all duration-500" style="width: 84%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CAROUSEL SLIDER CONTROLS HEADER -->
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-6">
+                    <div class="flex items-center gap-2">
+                        <span class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-dark bg-white px-3.5 py-1.5 rounded-full border border-brand-sand shadow-xs">
+                            <i data-lucide="sparkles" class="w-3.5 h-3.5 text-brand-goldDark"></i>
+                            Bộ Sưu Tập 5 Mẫu Bán Chạy Nhất
+                        </span>
+                        <span class="text-xs text-gray-500 hidden md:inline">← Kéo chuột hoặc vuốt để xem trọn bộ →</span>
+                    </div>
+
+                    <!-- Prev/Next Navigation Buttons -->
+                    <div class="flex items-center gap-2">
+                        <button id="sliderPrevBtn" aria-label="Sản phẩm trước" class="w-10 h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center text-brand-dark hover:bg-brand-dark hover:text-white transition-all">
+                            <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                        </button>
+                        <button id="sliderNextBtn" aria-label="Sản phẩm tiếp theo" class="w-10 h-10 rounded-full bg-white border border-gray-200 shadow-sm flex items-center justify-center text-brand-dark hover:bg-brand-dark hover:text-white transition-all">
+                            <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- HORIZONTAL SCROLL CAROUSEL (CUỘN TỪ PHẢI SANG TRÁI / TRÁI SANG PHẢI) -->
+                <div id="productSlider" class="product-slider-container flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory py-4 px-2 -mx-2 cursor-grab">
+                    
+                    <!-- PRODUCT 1: One Clothes 1 (299k) -->
+                    <div class="product-card w-[290px] sm:w-[330px] md:w-[350px] flex-shrink-0 snap-center bg-white rounded-3xl p-5 border border-brand-sand shadow-sm flex flex-col justify-between" data-index="0">
+                        <div>
+                            <!-- Product Image Area with Hover Switch -->
+                            <div class="relative rounded-2xl overflow-hidden aspect-[3/4] bg-brand-sandLight mb-4 group">
+                                <img id="img-one1" src="one clothes 1/ONE_CLOTHES_19_POSE_1.png" alt="One Clothes 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-3 left-3 bg-brand-dark text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-full shadow-xs">
+                                    🔥 HOT TREND
+                                </span>
+                                <!-- Quick View Toggle Buttons -->
+                                <div class="absolute bottom-3 left-3 right-3 flex gap-1.5 justify-center opacity-90 group-hover:opacity-100 transition-opacity">
+                                    <button onclick="switchProductImage('img-one1', 'one clothes 1/ONE_CLOTHES_19_POSE_1.png')" class="text-[10px] font-semibold bg-white/90 hover:bg-white text-gray-800 px-2 py-1 rounded-md shadow-xs">Mẫu mặc</button>
+                                    <button onclick="switchProductImage('img-one1', 'one clothes 1/ONE_CLOTHES_19_SAN_PHAM.png')" class="text-[10px] font-semibold bg-white/90 hover:bg-white text-gray-800 px-2 py-1 rounded-md shadow-xs">Chi tiết áo</button>
+                                    <button onclick="switchProductImage('img-one1', 'one clothes 1/ONE_CLOTHES_19_POSE_2.png')" class="text-[10px] font-semibold bg-white/90 hover:bg-white text-gray-800 px-2 py-1 rounded-md shadow-xs">Dáng ngồi</button>
+                                </div>
+                            </div>
+
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-goldDark">Mã: One Clothes 1</span>
+                            <h3 class="font-serif text-lg font-bold text-brand-dark mt-0.5 leading-snug">Set Sơ Mi Trắng & Quần Short Cạp Cao</h3>
+                            <p class="text-xs text-gray-500 mt-1">Kèm thắt lưng tôn chân dài, thanh lịch công sở</p>
+
+                            <div class="my-4">
+                                <span class="text-xs text-gray-400 line-through">450.000đ</span>
+                                <div class="flex items-baseline gap-2">
+                                    <span class="font-serif text-2xl sm:text-3xl font-bold text-brand-dark">299.000đ</span>
+                                    <span class="text-[11px] font-bold text-red-600 bg-red-100 px-2 py-0.5 rounded-full">-33%</span>
+                                </div>
+                            </div>
+
+                            <ul class="space-y-2 text-xs text-gray-600 border-t border-gray-100 pt-3">
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Rập giấu bụng, hack chân dài +5cm</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Sơ mi lụa tơ tằm mềm mát không nhăn</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Tặng kèm thắt lưng da khóa kim</li>
+                            </ul>
+                        </div>
+
+                        <button onclick="selectProduct('one1')" class="mt-6 w-full py-3 px-4 rounded-full text-xs font-bold uppercase tracking-wider border-2 border-brand-dark text-brand-dark hover:bg-brand-dark hover:text-white transition-colors">
+                            Chọn One Clothes 1 – 299k
+                        </button>
+                    </div>
+
+                    <!-- PRODUCT 2: One Clothes 2 (399k) -->
+                    <div class="product-card w-[290px] sm:w-[330px] md:w-[350px] flex-shrink-0 snap-center bg-white rounded-3xl p-5 border border-brand-sand shadow-sm flex flex-col justify-between" data-index="1">
+                        <div>
+                            <div class="relative rounded-2xl overflow-hidden aspect-[3/4] bg-brand-sandLight mb-4 group">
+                                <img id="img-one2" src="one clothes 2/ONE_CLOTHES_20_POSE_1.png" alt="One Clothes 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-3 left-3 bg-pink-600 text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-full shadow-xs">
+                                    🎀 TIỂU THƯ DỊU DÀNG
+                                </span>
+                                <div class="absolute bottom-3 left-3 right-3 flex gap-1.5 justify-center opacity-90 group-hover:opacity-100 transition-opacity">
+                                    <button onclick="switchProductImage('img-one2', 'one clothes 2/ONE_CLOTHES_20_POSE_1.png')" class="text-[10px] font-semibold bg-white/90 hover:bg-white text-gray-800 px-2 py-1 rounded-md shadow-xs">Mẫu mặc</button>
+                                    <button onclick="switchProductImage('img-one2', 'one clothes 2/ONE_CLOTHES_20_SAN_PHAM.png')" class="text-[10px] font-semibold bg-white/90 hover:bg-white text-gray-800 px-2 py-1 rounded-md shadow-xs">Chi tiết áo</button>
+                                    <button onclick="switchProductImage('img-one2', 'one clothes 2/ONE_CLOTHES_20_POSE_2.png')" class="text-[10px] font-semibold bg-white/90 hover:bg-white text-gray-800 px-2 py-1 rounded-md shadow-xs">Dáng đi</button>
+                                </div>
+                            </div>
+
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-goldDark">Mã: One Clothes 2</span>
+                            <h3 class="font-serif text-lg font-bold text-brand-dark mt-0.5 leading-snug">Set Áo Blouse Ren & Chân Váy Hồng</h3>
+                            <p class="text-xs text-gray-500 mt-1">Tay bồng thắt nơ ngực, chân váy xếp ly tennis</p>
+
+                            <div class="my-4">
+                                <span class="text-xs text-gray-400 line-through">590.000đ</span>
+                                <div class="flex items-baseline gap-2">
+                                    <span class="font-serif text-2xl sm:text-3xl font-bold text-brand-dark">399.000đ</span>
+                                    <span class="text-[11px] font-bold text-red-600 bg-red-100 px-2 py-0.5 rounded-full">-32%</span>
+                                </div>
+                            </div>
+
+                            <ul class="space-y-2 text-xs text-gray-600 border-t border-gray-100 pt-3">
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Blouse ren dệt kim mềm mịn, không ngứa</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Tôn dáng hack tuổi, cực kỳ ăn ảnh</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Quần lót bảo hộ may ẩn bên trong váy</li>
+                            </ul>
+                        </div>
+
+                        <button onclick="selectProduct('one2')" class="mt-6 w-full py-3 px-4 rounded-full text-xs font-bold uppercase tracking-wider border-2 border-brand-dark text-brand-dark hover:bg-brand-dark hover:text-white transition-colors">
+                            Chọn One Clothes 2 – 399k
+                        </button>
+                    </div>
+
+                    <!-- PRODUCT 3: One Clothes 3 (599k) - BEST SELLER HIGHLIGHT -->
+                    <div class="product-card w-[290px] sm:w-[330px] md:w-[350px] flex-shrink-0 snap-center bg-brand-dark text-white rounded-3xl p-5 border-2 border-brand-gold shadow-xl flex flex-col justify-between relative" data-index="2">
+                        <!-- Best Seller Floating Ribbon -->
+                        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-brand-gold to-brand-goldDark text-brand-dark font-bold text-[10px] uppercase px-3 py-1 rounded-full shadow-md tracking-wider flex items-center gap-1 z-10">
+                            <i data-lucide="flame" class="w-3 h-3 fill-current"></i> BEST SELLER 2026
+                        </div>
+
+                        <div>
+                            <div class="relative rounded-2xl overflow-hidden aspect-[3/4] bg-brand-charcoal mb-4 group">
+                                <img id="img-one3" src="one clothes 3/ONE_CLOTHES_07_POSE_1.png" alt="One Clothes 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-3 left-3 bg-brand-gold text-brand-dark text-[10px] uppercase font-bold px-2.5 py-1 rounded-full shadow-xs">
+                                    ⭐ SIGNATURE DESIGN
+                                </span>
+                                <div class="absolute bottom-3 left-3 right-3 flex gap-1.5 justify-center opacity-90 group-hover:opacity-100 transition-opacity">
+                                    <button onclick="switchProductImage('img-one3', 'one clothes 3/ONE_CLOTHES_07_POSE_1.png')" class="text-[10px] font-semibold bg-white/90 hover:bg-white text-gray-800 px-2 py-1 rounded-md shadow-xs">Mẫu mặc</button>
+                                    <button onclick="switchProductImage('img-one3', 'one clothes 3/ONE_CLOTHES_07_SAN_PHAM.png')" class="text-[10px] font-semibold bg-white/90 hover:bg-white text-gray-800 px-2 py-1 rounded-md shadow-xs">Chi tiết áo</button>
+                                    <button onclick="switchProductImage('img-one3', 'one clothes 3/ONE_CLOTHES_07_POSE_2.png')" class="text-[10px] font-semibold bg-white/90 hover:bg-white text-gray-800 px-2 py-1 rounded-md shadow-xs">Dáng đi</button>
+                                </div>
+                            </div>
+
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-gold">Mã: One Clothes 3</span>
+                            <h3 class="font-serif text-lg font-bold text-white mt-0.5 leading-snug">Set Thun Ôm Body & Váy Vạt Đắp Nơ</h3>
+                            <p class="text-xs text-gray-300 mt-1">Tone xanh pastel thanh thoát, tôn trọn 3 vòng</p>
+
+                            <div class="my-4">
+                                <span class="text-xs text-gray-400 line-through">890.000đ</span>
+                                <div class="flex items-baseline gap-2">
+                                    <span class="font-serif text-2xl sm:text-3xl font-bold text-brand-gold">599.000đ</span>
+                                    <span class="text-[11px] font-bold text-emerald-300 bg-emerald-950 px-2 py-0.5 rounded-full">-33%</span>
+                                </div>
+                            </div>
+
+                            <ul class="space-y-2 text-xs text-gray-200 border-t border-white/15 pt-3">
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-gold"></i> Thun ôm body co giãn 4 chiều mềm mịn</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-gold"></i> Chân váy vạt đắp giấu bụng dưới triệt để</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-gold"></i> <strong>MIỄN PHÍ VẬN CHUYỂN</strong> toàn quốc</li>
+                            </ul>
+                        </div>
+
+                        <button onclick="selectProduct('one3')" class="mt-6 w-full py-3.5 px-4 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-gold hover:bg-brand-goldLight text-brand-dark transition-colors shadow-lg">
+                            Chọn One Clothes 3 – 599k
+                        </button>
+                    </div>
+
+                    <!-- PRODUCT 4: One Clothes 4 (499k) -->
+                    <div class="product-card w-[290px] sm:w-[330px] md:w-[350px] flex-shrink-0 snap-center bg-white rounded-3xl p-5 border border-brand-sand shadow-sm flex flex-col justify-between" data-index="3">
+                        <div>
+                            <div class="relative rounded-2xl overflow-hidden aspect-[3/4] bg-brand-sandLight mb-4 group">
+                                <img id="img-one4" src="one clothes 4/ONE_CLOTHES_05_POSE_1.png" alt="One Clothes 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-3 left-3 bg-amber-800 text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-full shadow-xs">
+                                    ✨ QUYẾN RŨ TIỆC TỐI
+                                </span>
+                                <div class="absolute bottom-3 left-3 right-3 flex gap-1.5 justify-center opacity-90 group-hover:opacity-100 transition-opacity">
+                                    <button onclick="switchProductImage('img-one4', 'one clothes 4/ONE_CLOTHES_05_POSE_1.png')" class="text-[10px] font-semibold bg-white/90 hover:bg-white text-gray-800 px-2 py-1 rounded-md shadow-xs">Mẫu mặc</button>
+                                    <button onclick="switchProductImage('img-one4', 'one clothes 4/ONE_CLOTHES_05_SAN_PHAM.png')" class="text-[10px] font-semibold bg-white/90 hover:bg-white text-gray-800 px-2 py-1 rounded-md shadow-xs">Chi tiết đầm</button>
+                                    <button onclick="switchProductImage('img-one4', 'one clothes 4/ONE_CLOTHES_05_POSE_2.png')" class="text-[10px] font-semibold bg-white/90 hover:bg-white text-gray-800 px-2 py-1 rounded-md shadow-xs">Dáng nghiêng</button>
+                                </div>
+                            </div>
+
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-goldDark">Mã: One Clothes 4</span>
+                            <h3 class="font-serif text-lg font-bold text-brand-dark mt-0.5 leading-snug">Đầm Lụa Satin 2 Dây Cổ Đổ Nâu Đồng</h3>
+                            <p class="text-xs text-gray-500 mt-1">Drape Silk Slip Dress lộng lẫy tiệc tối sang trọng</p>
+
+                            <div class="my-4">
+                                <span class="text-xs text-gray-400 line-through">750.000đ</span>
+                                <div class="flex items-baseline gap-2">
+                                    <span class="font-serif text-2xl sm:text-3xl font-bold text-brand-dark">499.000đ</span>
+                                    <span class="text-[11px] font-bold text-red-600 bg-red-100 px-2 py-0.5 rounded-full">-33%</span>
+                                </div>
+                            </div>
+
+                            <ul class="space-y-2 text-xs text-gray-600 border-t border-gray-100 pt-3">
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Lụa Satin cao cấp bóng mịn, bắt sáng lộng lẫy</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Cổ đổ buông rủ quyến rũ khoe trọn bờ vai</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Thắt eo vát hông tạo đường cong chữ S</li>
+                            </ul>
+                        </div>
+
+                        <button onclick="selectProduct('one4')" class="mt-6 w-full py-3 px-4 rounded-full text-xs font-bold uppercase tracking-wider border-2 border-brand-dark text-brand-dark hover:bg-brand-dark hover:text-white transition-colors">
+                            Chọn One Clothes 4 – 499k
+                        </button>
+                    </div>
+
+                    <!-- PRODUCT 5: One Clothes 5 (349k) -->
+                    <div class="product-card w-[290px] sm:w-[330px] md:w-[350px] flex-shrink-0 snap-center bg-white rounded-3xl p-5 border border-brand-sand shadow-sm flex flex-col justify-between" data-index="4">
+                        <div>
+                            <div class="relative rounded-2xl overflow-hidden aspect-[3/4] bg-brand-sandLight mb-4 group">
+                                <img id="img-one5" src="one clothes 5/ONE_CLOTHES_06_POSE_1.png" alt="One Clothes 5" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <span class="absolute top-3 left-3 bg-stone-700 text-white text-[10px] uppercase font-bold px-2.5 py-1 rounded-full shadow-xs">
+                                    🍂 ELEGANT MINIMAL
+                                </span>
+                                <div class="absolute bottom-3 left-3 right-3 flex gap-1.5 justify-center opacity-90 group-hover:opacity-100 transition-opacity">
+                                    <button onclick="switchProductImage('img-one5', 'one clothes 5/ONE_CLOTHES_06_POSE_1.png')" class="text-[10px] font-semibold bg-white/90 hover:bg-white text-gray-800 px-2 py-1 rounded-md shadow-xs">Mẫu mặc</button>
+                                    <button onclick="switchProductImage('img-one5', 'one clothes 5/ONE_CLOTHES_06_SAN_PHAM.png')" class="text-[10px] font-semibold bg-white/90 hover:bg-white text-gray-800 px-2 py-1 rounded-md shadow-xs">Chi tiết áo</button>
+                                    <button onclick="switchProductImage('img-one5', 'one clothes 5/ONE_CLOTHES_06_POSE_2.png')" class="text-[10px] font-semibold bg-white/90 hover:bg-white text-gray-800 px-2 py-1 rounded-md shadow-xs">Dáng đi</button>
+                                </div>
+                            </div>
+
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-goldDark">Mã: One Clothes 5</span>
+                            <h3 class="font-serif text-lg font-bold text-brand-dark mt-0.5 leading-snug">Set Áo Dệt Kim & Chân Váy Xếp Ly Kem</h3>
+                            <p class="text-xs text-gray-500 mt-1">Dáng lửng cúc ngọc trai, phong cách tiểu thư Pháp</p>
+
+                            <div class="my-4">
+                                <span class="text-xs text-gray-400 line-through">520.000đ</span>
+                                <div class="flex items-baseline gap-2">
+                                    <span class="font-serif text-2xl sm:text-3xl font-bold text-brand-dark">349.000đ</span>
+                                    <span class="text-[11px] font-bold text-red-600 bg-red-100 px-2 py-0.5 rounded-full">-33%</span>
+                                </div>
+                            </div>
+
+                            <ul class="space-y-2 text-xs text-gray-600 border-t border-gray-100 pt-3">
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Dệt kim cao cấp dập nổi, cúc ngọc trai vintage</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Chân váy xếp ly trắng kem thanh lịch chuẩn Paris</li>
+                                <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Giữ form tốt, ấm áp nhẹ nhàng ngày chuyển mùa</li>
+                            </ul>
+                        </div>
+
+                        <button onclick="selectProduct('one5')" class="mt-6 w-full py-3 px-4 rounded-full text-xs font-bold uppercase tracking-wider border-2 border-brand-dark text-brand-dark hover:bg-brand-dark hover:text-white transition-colors">
+                            Chọn One Clothes 5 – 349k
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- CAROUSEL INDICATOR DOTS -->
+                <div class="flex justify-center items-center gap-2 mt-6 mb-12" id="sliderDots">
+                    <button class="slider-dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300 active" onclick="scrollToSlide(0)"></button>
+                    <button class="slider-dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300" onclick="scrollToSlide(1)"></button>
+                    <button class="slider-dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300" onclick="scrollToSlide(2)"></button>
+                    <button class="slider-dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300" onclick="scrollToSlide(3)"></button>
+                    <button class="slider-dot w-2.5 h-2.5 rounded-full bg-gray-300 transition-all duration-300" onclick="scrollToSlide(4)"></button>
+                </div>
+
+                <!-- SPECIAL COMBO BANNER (TIẾT KIỆM THÊM KHI MUA TỪ 2 SẢN PHẨM) -->
+                <div class="max-w-4xl mx-auto mb-16 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-brand-dark via-brand-charcoal to-brand-dark text-white border border-brand-gold/40 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="space-y-2 text-center md:text-left">
+                        <span class="inline-block bg-brand-gold text-brand-dark text-[10px] font-bold uppercase px-2.5 py-0.5 rounded-full">Đặc quyền mua chung</span>
+                        <h3 class="font-serif text-xl sm:text-2xl font-bold text-white">Mua Từ 2 Sản Phẩm: Nhận Thêm Ưu Đãi Khủng!</h3>
+                        <p class="text-xs text-gray-300">
+                            🎁 <strong>Mua 2 món bất kỳ:</strong> Giảm thêm 10% + Miễn phí vận chuyển toàn quốc<br>
+                            🎁 <strong>Mua 3 món bất kỳ:</strong> Giảm thêm 15% + Freeship + Tặng ngay 01 Áo Camisole lụa 250k
+                        </p>
+                    </div>
+                    <button onclick="selectProduct('combo2')" class="px-6 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-gold hover:bg-brand-goldLight text-brand-dark transition-all flex-shrink-0 shadow-lg flex items-center gap-2">
+                        <span>Đăng Ký Mua Combo 2 Món</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+
+                <!-- FAST CHECKOUT FORM -->
+                <div id="orderForm" class="max-w-2xl mx-auto bg-white rounded-3xl p-6 sm:p-10 border border-brand-sand shadow-xl">
+                    <div class="text-center mb-8">
+                        <span class="text-xs font-bold uppercase tracking-widest text-brand-goldDark">Chỉ Mất 30 Giây</span>
+                        <h3 class="font-serif text-2xl font-bold text-brand-dark mt-1">Form Đăng Ký Đặt Hàng Nhanh</h3>
+                        <p class="text-xs text-gray-500 mt-1">Chưa cần thanh toán ngay • Chuyên viên sẽ gọi tư vấn màu & size chuẩn xác</p>
+                    </div>
+
+                    <form id="checkoutForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">1. Họ và tên của bạn: *</label>
+                            <input type="text" id="custName" required placeholder="Ví dụ: Nguyễn Thùy Linh" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">2. Số điện thoại nhận hàng: *</label>
+                            <input type="tel" id="custPhone" required placeholder="Ví dụ: 0912 345 678" pattern="[0-9]{10}" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">3. Địa chỉ nhận hàng chi tiết: *</label>
+                            <input type="text" id="custAddress" required placeholder="Số nhà, tên đường, Phường/Xã, Quận/Huyện, Tỉnh/Thành phố" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase mb-1">4. Chọn sản phẩm / Combo: *</label>
+                                <select id="custCombo" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold bg-white">
+                                    <option value="one1">One Clothes 1: 299.000đ (Set Sơ Mi & Quần Short)</option>
+                                    <option value="one2">One Clothes 2: 399.000đ (Set Blouse Ren & Váy Hồng)</option>
+                                    <option value="one3" selected>One Clothes 3: 599.000đ (Set Thun Body & Váy Vạt Đắp - Best Seller)</option>
+                                    <option value="one4">One Clothes 4: 499.000đ (Đầm Lụa Satin 2 Dây Cổ Đổ)</option>
+                                    <option value="one5">One Clothes 5: 349.000đ (Set Dệt Kim Cúc Ngọc & Váy Kem)</option>
+                                    <option value="combo2">Combo 2 Món Bất Kỳ: 699.000đ (Freeship + Tiết Kiệm Thêm)</option>
+                                    <option value="combo3">Combo 3 Món Bất Kỳ: 999.000đ (Freeship + Tặng Áo Lụa)</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 uppercase mb-1">5. Chiều cao & Cân nặng (để chọn size):</label>
+                                <input type="text" id="custBody" placeholder="Ví dụ: 1m60 - 50kg (Hoặc Size M)" class="w-full px-4 py-3 rounded-xl border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-gray-700 uppercase mb-1">6. Ghi chú thêm (Màu sắc mong muốn, giờ giao hàng...):</label>
+                            <textarea id="custNote" rows="2" placeholder="Ví dụ: Giao giờ hành chính, mình chọn One Clothes 3 size M..." class="w-full px-4 py-2.5 rounded-xl border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-brand-gold"></textarea>
+                        </div>
+
+                        <!-- Summary info box with thumbnail -->
+                        <div class="p-4 rounded-xl bg-brand-sandLight border border-brand-sand text-xs space-y-2 text-gray-700" id="orderSummary">
+                            <div class="flex items-center gap-3 pb-2 border-b border-gray-200">
+                                <img id="summaryThumb" src="one clothes 3/ONE_CLOTHES_07_POSE_1.png" alt="Sản phẩm đã chọn" class="w-12 h-16 object-cover rounded-lg border border-gray-200 shadow-2xs">
+                                <div>
+                                    <span class="text-gray-500 block text-[11px]">Sản phẩm đã chọn:</span>
+                                    <span id="summaryPackage" class="text-brand-dark font-bold text-sm">One Clothes 3: Set Thun Body & Váy Vạt Đắp</span>
+                                </div>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Phí vận chuyển:</span>
+                                <span id="summaryShipping" class="text-emerald-600 font-bold">MIỄN PHÍ VẬN CHUYỂN</span>
+                            </div>
+                            <div class="flex justify-between text-sm font-bold border-t border-gray-200 pt-1 text-brand-dark">
+                                <span>Tổng thanh toán khi nhận hàng:</span>
+                                <span id="summaryTotal" class="text-brand-accent text-base">599.000đ</span>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="w-full py-4 px-8 rounded-full text-sm font-bold uppercase tracking-wider bg-brand-accent hover:bg-brand-accentHover text-white shadow-xl hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2">
+                            <span>HOÀN TẤT ĐẶT HÀNG – GIỮ SUẤT ƯU ĐÃI</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </button>
+
+                        <p class="text-center text-[11px] text-gray-500 pt-1">
+                            🔒 Thông tin của bạn được bảo mật 100%. One Clothes cam kết không gửi thư rác.
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- KHỐI 5: FOOTER & TRUST (AN TÂM TUYỆT ĐỐI) -->
+        <!-- ========================================== -->
+        <section id="faq" class="py-20 bg-gradient-to-b from-[#FAF7F2] to-white border-t border-brand-roseBorder/40">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- 3 Pillars of Risk Reversal -->
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="text-xs uppercase font-bold tracking-widest text-brand-goldDark">Chính Sách Hậu Mãi</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-dark mt-2">
+                        Mua Sắm Hoàn Toàn Không Rủi Ro (Zero-Risk)
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                    <div class="p-6 rounded-2xl bg-brand-sandLight border border-brand-sand text-center space-y-3">
+                        <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto">
+                            <i data-lucide="package-check" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-bold text-base text-brand-dark">Đồng Kiểm Tại Chỗ</h4>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Mở gói hàng, kiểm tra chất vải, thử màu sắc trước khi thanh toán. Không ưng ý hoàn trả 0 đồng phí.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-brand-sandLight border border-brand-sand text-center space-y-3">
+                        <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center mx-auto">
+                            <i data-lucide="refresh-cw" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-bold text-base text-brand-dark">Đổi Size 7 Ngày Tận Cửa</h4>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            Mặc không vừa hoặc muốn đổi màu khác? Shipper sẽ mang size mới tới tận nhà đổi cho bạn mà không cần ra bưu cục.
+                        </p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-brand-sandLight border border-brand-sand text-center space-y-3">
+                        <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center mx-auto">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-bold text-base text-brand-dark">Đền Tiền 200% Nếu Sai Ảnh</h4>
+                        <p class="text-xs text-gray-600 leading-relaxed">
+                            100% hình ảnh chụp từ sản phẩm thật. Cam kết chất lượng vải may và đường chỉ đúng chính xác như mô tả.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Accordion -->
+                <div class="max-w-3xl mx-auto">
+                    <h3 class="font-serif text-2xl font-bold text-center text-brand-dark mb-6">
+                        Câu Hỏi Thường Gặp Của Khách Hàng
+                    </h3>
+
+                    <div class="space-y-3" id="faqAccordion">
+                        
+                        <!-- Question 1 -->
+                        <div class="faq-item border border-brand-sand rounded-2xl overflow-hidden bg-brand-sandLight">
+                            <button class="faq-question w-full px-6 py-4 text-left font-bold text-sm text-brand-dark flex justify-between items-center hover:bg-white transition-colors">
+                                <span>1. Vải Eco-Silk này giặt máy có bị xù lông hay co rút không?</span>
+                                <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400 transition-transform"></i>
+                            </button>
+                            <div class="faq-answer px-6 pb-4 text-xs text-gray-600 leading-relaxed hidden">
+                                Hoàn toàn không. Sợi dệt của One Clothes đã được xử lý hấp nhiệt công nghệ chống bai dão. Bạn có thể giặt máy ở chế độ thường. Để giữ độ óng ả lâu dài nhất trên 2 năm, chúng tôi khuyên bạn nên cho vào túi giặt đi kèm.
+                            </div>
+                        </div>
+
+                        <!-- Question 2 -->
+                        <div class="faq-item border border-brand-sand rounded-2xl overflow-hidden bg-brand-sandLight">
+                            <button class="faq-question w-full px-6 py-4 text-left font-bold text-sm text-brand-dark flex justify-between items-center hover:bg-white transition-colors">
+                                <span>2. Mình có mỡ bụng dưới sau sinh, dáng váy này có che được không?</span>
+                                <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400 transition-transform"></i>
+                            </button>
+                            <div class="faq-answer px-6 pb-4 text-xs text-gray-600 leading-relaxed hidden">
+                                Đây chính là thế mạnh lớn nhất của thiết kế One Clothes! Đường rập may vát eo 3D cùng nếp xếp ly tự nhiên sẽ tạo ảo giác thị giác phẳng bụng hoàn toàn mà không cần nịt bụng khó chịu.
+                            </div>
+                        </div>
+
+                        <!-- Question 3 -->
+                        <div class="faq-item border border-brand-sand rounded-2xl overflow-hidden bg-brand-sandLight">
+                            <button class="faq-question w-full px-6 py-4 text-left font-bold text-sm text-brand-dark flex justify-between items-center hover:bg-white transition-colors">
+                                <span>3. Thời gian giao hàng mất bao lâu? Có được thử trước không?</span>
+                                <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400 transition-transform"></i>
+                            </button>
+                            <div class="faq-answer px-6 pb-4 text-xs text-gray-600 leading-relaxed hidden">
+                                Đơn hàng nội thành Hà Nội & TP.HCM giao hỏa tốc trong 24h. Các tỉnh thành khác từ 2-3 ngày. Bạn hoàn toàn ĐƯỢC PHÉP mở gói hàng thử trước mắt shipper, ưng ý mới thanh toán tiền mặt hoặc chuyển khoản.
+                            </div>
+                        </div>
+
+                        <!-- Question 4 -->
+                        <div class="faq-item border border-brand-sand rounded-2xl overflow-hidden bg-brand-sandLight">
+                            <button class="faq-question w-full px-6 py-4 text-left font-bold text-sm text-brand-dark flex justify-between items-center hover:bg-white transition-colors">
+                                <span>4. Nếu mặc thử không vừa vặn thì đổi như thế nào?</span>
+                                <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400 transition-transform"></i>
+                            </button>
+                            <div class="faq-answer px-6 pb-4 text-xs text-gray-600 leading-relaxed hidden">
+                                Rất đơn giản, bạn chỉ cần nhắn cho Hotline hoặc Zalo CSKH của One Clothes. Chúng tôi sẽ điều phối shipper mang size mới tới tận nhà bạn và nhận lại sản phẩm cũ. Bạn không mất thời gian ra bưu cục.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-brand-dark text-white pt-16 pb-28 sm:pb-16 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+                
+                <!-- Col 1: About Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-3">
+                        <img src="logo-clean.png" alt="Logo One Clothes" class="h-12 w-auto object-contain rounded-xl border border-white/20 shadow-md">
+                        <div class="flex flex-col">
+                            <span class="font-serif text-xl font-bold tracking-widest text-white">ONE CLOTHES</span>
+                            <span class="text-[8px] tracking-[0.25em] text-brand-roseLight uppercase font-bold -mt-0.5">Capsule Wardrobe</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        "Một Lựa Chọn – Chuẩn Mọi Phong Cách." Thương hiệu thời trang nữ tối giản, thanh lịch, đồng hành cùng quý cô hiện đại từ 9h sáng đến 9h tối.
+                    </p>
+                    <div class="flex items-center gap-3 pt-2 text-gray-400">
+                        <a href="#" aria-label="Trang Facebook One Clothes" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-gold hover:text-brand-dark transition-colors"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+                        <a href="#" aria-label="Trang Instagram One Clothes" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-gold hover:text-brand-dark transition-colors"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                        <a href="#" aria-label="Kênh Youtube One Clothes" class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-brand-gold hover:text-brand-dark transition-colors"><i data-lucide="youtube" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Showroom Locations -->
+                <div class="space-y-3">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-brand-gold">Hệ Thống Cửa Hàng</h4>
+                    <p class="text-xs text-gray-300">
+                        <strong>Showroom 01 (Flagship):</strong><br>
+                        123 Đường Nguyễn Trãi, P. Bến Thành, Quận 1, TP. Hồ Chí Minh
+                    </p>
+                    <p class="text-xs text-gray-300">
+                        <strong>Showroom 02:</strong><br>
+                        45 Đường Phố Huế, Quận Hai Bà Trưng, Hà Nội
+                    </p>
+                    <p class="text-xs text-gray-400">Giờ mở cửa: 08:30 – 22:00 (Cả T7 & CN)</p>
+                </div>
+
+                <!-- Col 3: Customer Care -->
+                <div class="space-y-3">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-brand-gold">Hỗ Trợ Khách Hàng</h4>
+                    <ul class="text-xs text-gray-300 space-y-2">
+                        <li>Hotline đặt hàng: <strong class="text-white">1900 8899</strong></li>
+                        <li>Zalo hỗ trợ chọn size: <strong class="text-white">0909 123 456</strong></li>
+                        <li>Email: cskh@oneclothes.vn</li>
+                        <li>Chính sách bảo hành & đổi trả 7 ngày</li>
+                        <li>Quy định bảo mật thông tin cá nhân</li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Verified Certification -->
+                <div class="space-y-3">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-brand-gold">Chứng Nhận Uy Tín</h4>
+                    <p class="text-xs text-gray-400">
+                        Website thương mại điện tử đã thông báo và đăng ký chính thức với Bộ Công Thương Việt Nam.
+                    </p>
+                    <div class="inline-block p-2 rounded-xl bg-white/10 border border-white/10">
+                        <span class="text-[10px] uppercase font-bold text-emerald-400 flex items-center gap-1.5">
+                            <i data-lucide="check-circle" class="w-4 h-4"></i> ĐÃ ĐĂNG KÝ BỘ CÔNG THƯƠNG
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+                <p>© 2026 One Clothes Fashion. All rights reserved.</p>
+                <p>Designed for High Conversion Rate Optimization (CRO).</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY BOTTOM BAR FOR MOBILE (HIGH CRO) -->
+    <div id="mobileStickyBar" class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-brand-sand px-4 py-2.5 sm:hidden flex items-center justify-between shadow-2xl transition-transform duration-300">
+        <div>
+            <span class="text-[10px] uppercase font-bold text-red-600 block">Ưu đãi còn 8 suất</span>
+            <span class="font-serif text-lg font-bold text-brand-dark">299.000đ <span class="text-xs text-gray-400 line-through">450k</span></span>
+        </div>
+        <a href="#orderForm" class="px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-accent text-white shadow-md flex items-center gap-1">
+            <span>Mua Ngay</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </a>
+    </div>
+
+    <!-- FLOATING LIVE PURCHASE TOAST (SOCIAL PROOF) -->
+    <div id="livePurchaseToast" class="fixed bottom-16 sm:bottom-6 left-4 z-40 bg-white/95 backdrop-blur-md border border-brand-sand shadow-2xl rounded-2xl p-3.5 max-w-xs transition-all duration-500 transform translate-y-24 opacity-0 flex items-center gap-3 pointer-events-none">
+        <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0">
+            <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+        </div>
+        <div>
+            <p class="text-xs font-bold text-brand-dark" id="toastCustomer">Chị Hoàng Yến (Hà Nội)</p>
+            <p class="text-[11px] text-gray-500" id="toastProduct">Vừa đặt thành công Combo 2 Quý Cô</p>
+            <span class="text-[9px] text-brand-goldDark font-semibold" id="toastTime">Cách đây 2 phút</span>
+        </div>
+    </div>
+
+    <!-- ORDER SUCCESS MODAL -->
+    <div id="orderSuccessModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 text-center shadow-2xl relative animate-scale-up">
+            <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-4">
+                <i data-lucide="check" class="w-8 h-8"></i>
+            </div>
+            
+            <h3 class="font-serif text-2xl font-bold text-brand-dark">Đặt Hàng Thành Công!</h3>
+            <p class="text-xs text-gray-600 mt-2">
+                Cảm ơn quý cô <strong id="modalCustName" class="text-brand-dark font-bold">Thùy Linh</strong> đã lựa chọn One Clothes.
+            </p>
+
+            <div class="my-5 p-4 rounded-2xl bg-brand-sandLight border border-brand-sand text-left text-xs space-y-2 text-gray-700">
+                <div class="flex justify-between">
+                    <span class="text-gray-500">Mã đơn hàng:</span>
+                    <strong class="text-brand-dark" id="modalOrderId">#OC-98231</strong>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-gray-500">Gói sản phẩm:</span>
+                    <strong class="text-brand-dark" id="modalPackage">Combo 2: Quý Cô Thanh Lịch</strong>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-gray-500">Số điện thoại:</span>
+                    <strong class="text-brand-dark" id="modalCustPhone">0912345678</strong>
+                </div>
+                <div class="flex justify-between border-t border-gray-200 pt-1 text-sm font-bold text-brand-dark">
+                    <span>Tổng tiền (khi nhận):</span>
+                    <span class="text-brand-accent" id="modalTotal">699.000đ</span>
+                </div>
+            </div>
+
+            <p class="text-xs text-gray-500 mb-6 leading-relaxed">
+                Chuyên viên tư vấn của One Clothes sẽ liên hệ số điện thoại của bạn trong vòng <strong>15 phút</strong> để xác nhận màu sắc, tư vấn size và tiến hành đóng gói.
+            </p>
+
+            <button onclick="closeModal()" class="w-full py-3.5 px-6 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-dark text-white hover:bg-brand-gold hover:text-brand-dark transition-colors">
+                Xác Nhận & Quay Lại Trang
+            </button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

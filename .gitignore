@@ -1,0 +1,13 @@
+# Windows thumbnail cache
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Mac DS_Store
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.log
